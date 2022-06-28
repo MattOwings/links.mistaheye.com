@@ -1,0 +1,273 @@
+* {
+    font-size: calc(3.5rem * 62.5%);
+    background: rgb(15, 15, 15);
+}
+html,
+body {
+    background: rgb(15, 15, 15);
+}
+
+.header {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(
+        45deg,
+        rgb(115, 0, 0),
+        rgb(130, 0, 0),
+        rgb(145, 0, 0),
+        rgb(160, 0, 0),
+        rgb(185, 0, 0),
+        rgb(205, 0, 0)
+    ); // linear-gradient
+    height: 17.5rem;
+    h1 {
+        color: rgb(240, 240, 240);
+        font-size: 3.5rem;
+        background: 0;
+    }
+    .eyeball-logo {
+        width: 10rem;
+        background: 0;
+    }
+}
+
+.main-content {
+    padding-top: 2.5rem;
+    background: rgb(15, 15, 15);
+    height: 60rem;
+    h1,
+    h2 {
+        color: rgb(240, 240, 240);
+        text-align: center;
+        background: 0;
+    }
+    .flex {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background: rgb(15, 15, 15);
+        .inner {
+            border-radius: 2rem;
+            margin: 1rem;
+            .link {
+                background: rgb(15, 15, 15);
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                margin: 0.5rem;
+                text-decoration: none;
+                padding: 1rem;
+                width: 30rem;
+                height: 8.5rem;
+                border-radius: 1.75rem;
+            }
+        }
+    }
+}
+.link:hover {
+    transition: 0.5s;
+    background: rgba(0, 0, 0, 0) !important;
+    /*h1,
+    h2 {
+        transition: 0.25s;
+        color: red;
+    }*/
+}
+
+.instagram {
+    background: linear-gradient(
+        45deg,
+        #405de6,
+        #5851db,
+        #833ab4,
+        #c13584,
+        #e1306c,
+        #fd1d1d
+    );
+}
+.youtube {
+    background: linear-gradient(45deg, #f80000, #e80000, #d80000);
+}
+.discord {
+    background: linear-gradient(
+        45deg,
+        rgb(101, 112, 232),
+        rgb(56, 71, 237),
+        rgb(49, 65, 239),
+        rgb(38, 54, 235),
+        rgb(20, 38, 235),
+        rgb(0, 21, 255)
+    );
+}
+.websites {
+    background: linear-gradient(45deg, #25df00, #22cb00, #1eb300);
+}
+.reddit {
+    background: linear-gradient(45deg, #ff7300, #e86900, #de6400);
+}
+.yellow {
+    background: linear-gradient(
+        45deg,
+        #ffff00,
+        #dfdf00,
+        #b9b900,
+        #b9b900,
+        #dfdf00,
+        #fff200
+    );
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+
+    background: 0;
+    padding-bottom: 5rem;
+    .copyright {
+        width: 75%;
+        margin-top: 5rem;
+        font-size: 1.5rem;
+    }
+}
+
+// DESKTOP: >1600 // Room for all elements to be completely expanded
+// TABLET: 1600-1100px // Elements begin to stack up, up to 2 in a row
+// MOBILE: <1100px // All elements are columned one one one // Currently completely broken under 550px
+
+@media screen and (max-width: 1100px) {
+    // Column 1 by 1 elements
+    // Header scaling
+    .main-content {
+        padding-top: .5rem !important;
+        .flex {
+            .inner {
+                margin: .25rem;
+                .link {
+                    h1, h2 {
+                        margin: 0;
+                    }
+                    width: 80vw;
+                }
+            }
+        }
+    }
+    .header {
+        h1 {
+            font-size: calc(3vw + 1.5rem);
+        }
+        .eyeball-logo {
+            width: calc(6vw + 4.5rem);
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    // Font size starts to get too crowded with lack of space
+    .header {
+        height: 20vh !important;
+    }
+    .main-content {
+        padding-top: .25rem !important;
+    }
+    .inner {
+        margin: 0.5rem !important;
+    }
+    .link {
+        height: 6rem !important;
+        h1 {
+            font-size: 5vw;
+        }
+        h2 {
+            font-size: 4vw;
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    // Font size starts to get too crowded with lack of space
+
+    // Shrink header and begin to decrease font and image size
+    .header {
+        h1 {
+            font-size: 10vw;
+        }
+        .eyeball-logo {
+            width: calc(6vw + 4.5rem);
+        }
+    }
+    .link {
+        h1 {
+            font-size: 6vw;
+        }
+        h2 {
+            font-size: 5vw;
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    // Font size starts to get too crowded with lack of space
+    // Removed margin to save space
+    .main-content {
+        padding-top: 0 !important;
+    }
+    .inner {
+        margin: .25rem !important;
+    }
+    .link {
+        h1 {
+            font-size: 7vw;
+        }
+        h2 {
+            font-size: 6vw;
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    // Font size starts to get too crowded with lack of space
+    // Footer needs more space
+
+    .link {
+        height: 4rem !important ;
+        h1 {
+            font-size: 6.5vw;
+            margin: 0;
+        }
+        h2 {
+            font-size: 4.75vw;
+            margin: 0;
+        }
+    }
+    .footer {
+        h1 {
+            font-size: 5vw !important;
+        }
+    }
+}
+@media screen and (max-width: 300px) {
+    // Font size starts to get too crowded with lack of space
+    .link {
+        h1 {
+            font-size: 6vw;
+        }
+        h2 {
+            font-size: 5vw;
+        }
+    }
+}
+@media screen and (max-width: 200px) {
+    // Font size starts to get too crowded with lack of space
+
+    .link {
+        h1 {
+            font-size: 6vw;
+        }
+        h2 {
+            font-size: 5.5vw;
+        }
+    }
+}
