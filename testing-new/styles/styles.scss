@@ -1,6 +1,6 @@
 $white: rgb(240, 240, 240);
 $black: rgb(15, 15, 15);
-$red: (240, 0, 0);
+$red: rgb(240, 0, 0);
 
 * {
     margin: 0;
@@ -21,33 +21,93 @@ body {
 
 .main {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
-    width: 100vw;
+    align-items: center;
     .flex-item {
+        width: 96vw;
+        padding: .25rem;
+        border-radius: .75em;
+
         text-decoration: none;
-        border: 1px solid blue;
+        margin-top: .5rem;
+
+        
         .top {
             display: flex;
-            justify-content: left;
             align-items: center;
-            padding: .35rem;
-            transition: 0.5s;
+            background-color: $black;
+            border-radius: .75rem;
+            transition: 0.35s;
             &:hover {
-                background-color: blue;
+                background: 0;
             }
-            img {
-                width: 8vw;
-                height: 8vw;
-                margin-right: 2vw;
+            .icon {
+                img {
+                    margin-top: .25rem;
+                    margin-left: 1rem;
+                    width: 8.25vw;
+                    height: 8.25vw;
+                    margin-right: 2vw;
+                }
             }
-            h1 {
-                color: $white;
-                font-size: 8vw;
+            .text {
+                h1 {
+                    color: $white;
+                    font-size: 5.5vw;
+                }
+                h2 {
+                    color: $white;
+                    font-size: 2.5vw;
+                    margin-bottom: .25rem;
+                    margin-left: .1rem;
+                }
             }
-            h2 {
-                font-size: 0;
-            }
+            
         }
     }
+}
+
+// Background gradient colors
+.instagram {
+    background: linear-gradient(
+        45deg,
+        #405de6,
+        #5851db,
+        #833ab4,
+        #c13584,
+        #e1306c,
+        #fd1d1d
+    );
+}
+.youtube {
+    background: linear-gradient(45deg, #f80000, #e80000, #d80000);
+}
+.discord {
+    background: linear-gradient(
+        45deg,
+        rgb(101, 112, 232),
+        rgb(56, 71, 237),
+        rgb(49, 65, 239),
+        rgb(38, 54, 235),
+        rgb(20, 38, 235),
+        rgb(0, 21, 255)
+    );
+}
+.websites {
+    background: linear-gradient(45deg, #25df00, #22cb00, #1eb300);
+}
+.reddit {
+    background: linear-gradient(45deg, #ff7300, #e86900, #de6400);
+}
+.yellow {
+    background: linear-gradient(
+        45deg,
+        #ffff00,
+        #dfdf00,
+        #b9b900,
+        #b9b900,
+        #dfdf00,
+        #fff200
+    );
 }
