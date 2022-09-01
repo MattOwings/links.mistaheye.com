@@ -2,6 +2,10 @@ $white: rgb(240, 240, 240);
 $black: rgb(15, 15, 15);
 $red: rgb(240, 0, 0);
 
+// broken 300px and smaller
+// working from 300px-800px
+// 800px+ WIP
+
 * {
     margin: 0;
     padding: 0;
@@ -12,94 +16,98 @@ body {
     background-color: $black;
 }
 
-.header {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    color: $white;
-    background-color: $black;
-    margin-top: 2vh;
-    img {
-        width: 20vw;
-        height: 20vw;
+@media only screen and (max-width: 800px) {
+    .header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: $white;
+        background-color: $black;
+        margin-top: 1vh;
+        img {
+            width: 20vw;
+            height: 20vw;
+        }
+        h1 {
+            font-size: 8vw;
+        }
+        h2 {
+            width: 95vw;
+            padding: .5rem;
+            text-align: center;
+            font-size: 4.65vw !important; // also in html, having trouble w it
+        }
+        hr {
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+            width: 95vw;
+            opacity: .85;
+            background: $white;
+            border: 1px solid $white;
+        }
     }
-    h1 {
-        font-size: 8vw;
-    }
-    h2 {
-        width: 95vw;
-        padding: .5rem;
-        text-align: center;
-        font-size: 4.65vw !important; // also in html, having trouble w it
-    }
-    hr {
-        margin-top: .5rem;
-        margin-bottom: .5rem;
-        width: 95vw;
-        opacity: .85;
-        background: $white;
-        border: 1px solid $white;
-    }
-}
-
-.main {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    .flex-item {
-        width: 96vw;
-        padding: .25rem;
-        border-radius: .75em;
-
-        text-decoration: none;
-        margin-top: .5rem;
-
-        
-        .top {
-            display: flex;
-            align-items: center;
-            background-color: $black;
-            border-radius: .75rem;
-            transition: 0.35s;
-            &:hover {
-                background: 0;
-            }
-            .icon {
-                img {
-                    margin-top: .25rem;
-                    margin-left: 1rem;
-                    width: 8.25vw;
-                    height: 8.25vw;
-                    margin-right: 2vw;
-                }
-            }
-            .text {
-                h1 {
-                    color: $white;
-                    font-size: 7vw;
-                }
-                h2 {
-                    color: $white;
-                    font-size: 3.5vw;
-                    margin-bottom: .25rem;
-                    margin-left: .1rem;
-                }
-            }
+    
+    .main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        .flex-item {
+            width: 96vw;
+            padding: .25rem;
+            border-radius: .75em;
+    
+            text-decoration: none;
+            margin-top: .5rem;
+    
             
+            .top {
+                display: flex;
+                align-items: center;
+                background-color: $black;
+                border-radius: .75rem;
+                transition: 0.35s;
+                &:hover {
+                    background: 0;
+                }
+                .icon {
+                    img {
+                        margin-top: .25rem;
+                        margin-left: 1rem;
+                        width: 8.25vw;
+                        height: 8.25vw;
+                        margin-right: 2vw;
+                    }
+                }
+                .text {
+                    h1 {
+                        color: $white;
+                        font-size: 7vw;
+                    }
+                    h2 {
+                        color: $white;
+                        font-size: 3.5vw;
+                        margin-bottom: .25rem;
+                        margin-left: .1rem;
+                    }
+                }
+                
+            }
+        }
+    }
+    
+    .footer {
+        p {
+            color: $white;
+            font-weight: bold;
+            font-size: 4.5vw;
+            text-align: center;
+            margin-top: 5vh;    
         }
     }
 }
 
-.footer {
-    p {
-        color: $white;
-        font-weight: bold;
-        font-size: 4.5vw;
-        text-align: center;
-        margin-top: 5vh;    
-    }
-}
+
 
 // Background gradient colors
 .instagram {
