@@ -94,10 +94,11 @@ body {
     .footer {
         p {
             color: $white;
-                font-weight: bold;
-                font-size: 2rem;
-                text-align: center;
-                margin-top: 5rem;  
+            font-weight: bold;
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 5rem;  
+            margin-bottom: 5rem;
         }
     }
 }
@@ -191,6 +192,7 @@ body {
             font-size: 4.5vw;
             text-align: center;
             margin-top: 5vh;    
+            margin-bottom: 5vh;
         }
     }
 }
@@ -227,7 +229,7 @@ body {
     background: linear-gradient(45deg, #25df00, #22cb00, #1eb300);
 }
 .reddit {
-    background: linear-gradient(45deg, #ff7300, #e86900, #de6400);
+    background: #FF4301;
 }
 .yellow {
     background: linear-gradient(
