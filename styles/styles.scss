@@ -19,36 +19,35 @@ body {
 
 @media only screen and (min-width: 1351px) {
     .header {
-        margin-top: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         h1 {
-            font-size: 4rem;
+            font-size: 2.5rem;
         }
         h2 {
-            font-size: 2.5rem;
+            font-size: 1.75rem;
             padding-left: 2rem;
             padding-right: 2rem;
         }
         img {
-            width: 10rem;
-            height: 10rem;
+            width: 7.5rem;
+            height: 7.5rem;
         }
         hr {
-            margin-top: .5rem;
-            margin-bottom: .5rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
             width: 95vw;
-            opacity: .85;
+            opacity: 0.85;
             background: $white;
             border: 1px solid $white;
         }
     }
     .first {
         margin-top: 1rem;
-    } 
-    
+    }
+
     .main {
         display: flex;
         flex-wrap: wrap;
@@ -57,7 +56,7 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: .75rem;
+            margin: 0.75rem;
             width: 30rem;
             height: 10rem;
             border-radius: 1.75rem;
@@ -90,20 +89,27 @@ body {
             }
         }
     }
-    
+
     .footer {
+        .buzzwords {
+            margin-top: 5rem;
+            p {
+                font-size: 1.75rem;
+                margin: 0;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
         p {
             color: $white;
             font-weight: bold;
             font-size: 2rem;
             text-align: center;
-            margin-top: 5rem;  
+            margin-top: 5rem;
             margin-bottom: 5rem;
         }
     }
 }
-
-
 
 @media only screen and (max-width: 1351px) {
     .header {
@@ -122,20 +128,20 @@ body {
         }
         h2 {
             width: 95vw;
-            padding: .5rem;
+            padding: 0.5rem;
             text-align: center;
             font-size: 4.65vw !important; // also in html, having trouble w it
         }
         hr {
-            margin-top: .5rem;
-            margin-bottom: .5rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
             width: 95vw;
-            opacity: .85;
+            opacity: 0.85;
             background: $white;
             border: 1px solid $white;
         }
     }
-    
+
     .main {
         display: flex;
         justify-content: center;
@@ -143,25 +149,24 @@ body {
         align-items: center;
         .flex-item {
             width: 96vw;
-            padding: .25rem;
-            border-radius: .75em;
-    
+            padding: 0.25rem;
+            border-radius: 0.75em;
+
             text-decoration: none;
-            margin-top: .5rem;
-    
-            
+            margin-top: 0.5rem;
+
             .top {
                 display: flex;
                 align-items: center;
                 background-color: $black;
-                border-radius: .75rem;
+                border-radius: 0.75rem;
                 transition: 0.35s;
                 &:hover {
                     background: 0;
                 }
                 .icon {
                     img {
-                        margin-top: .25rem;
+                        margin-top: 0.25rem;
                         margin-left: 1rem;
                         width: 8.25vw;
                         height: 8.25vw;
@@ -176,28 +181,34 @@ body {
                     h2 {
                         color: $white;
                         font-size: 3.5vw;
-                        margin-bottom: .25rem;
-                        margin-left: .1rem;
+                        margin-bottom: 0.25rem;
+                        margin-left: 0.1rem;
                     }
                 }
-                
             }
         }
     }
-    
+
     .footer {
+        .buzzwords {
+            margin-top: 5vh;
+            p {
+                font-size: 3vw;
+                margin: 0;
+                margin-top: 1vh;
+                margin-bottom: 1vh;
+            }
+        }
         p {
             color: $white;
             font-weight: bold;
             font-size: 4.5vw;
             text-align: center;
-            margin-top: 5vh;    
+            margin-top: 5vh;
             margin-bottom: 5vh;
         }
     }
 }
-
-
 
 // Background gradient colors
 .instagram {
@@ -225,20 +236,9 @@ body {
         rgb(0, 21, 255)
     );
 }
-.websites {
-    background: linear-gradient(45deg, #25df00, #22cb00, #1eb300);
-}
 .reddit {
-    background: #FF4301;
+    background: #ff4301;
 }
-.yellow {
-    background: linear-gradient(
-        45deg,
-        #ffff00,
-        #dfdf00,
-        #b9b900,
-        #b9b900,
-        #dfdf00,
-        #fff200
-    );
+.websites {
+    background: linear-gradient(45deg, #00baba, #009c9c);
 }

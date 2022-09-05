@@ -1,3 +1,3 @@
-# links.mistaheye.com
+# https://links.mistaheye.com
 
-Links subdomain for https://www.mistaheye.com/ containing all my links
+Front-end Website Application serving as an interface for end-users to find and access links to my many pages, social medias, and more.
