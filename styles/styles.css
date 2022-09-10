@@ -103,7 +103,27 @@ body {
   .main .flex-item .top .text h2 {
     font-size: 1.5rem;
   }
+  /*.section-header {
+        text-align: center;
+        font-size: 2rem;
+        margin-right: 35vw;
+    }
+    .divider {
+        display: flex;
+        justify-content: center;
+
+        .main-divider {
+            display: flex;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            width: 95vw;
+            opacity: 0.85;
+            background: $white;
+            border: 1px solid $white;
+        }
+    } */
   .footer .buzzwords {
+    padding: 2rem;
     margin-top: 5rem;
   }
   .footer .buzzwords p {
@@ -212,6 +232,7 @@ body {
     margin-left: 0.1rem;
   }
   .footer .buzzwords {
+    padding: 5vw;
     margin-top: 5vh;
   }
   .footer .buzzwords p {
@@ -248,5 +269,9 @@ body {
 
 .websites {
   background: linear-gradient(45deg, #00baba, #009c9c);
+}
+
+.twitch {
+  background: linear-gradient(45deg, #6441a5, #5f2cbf);
 }
 /*# sourceMappingURL=styles.css.map */
